@@ -7,6 +7,9 @@ namespace Task01_IntegerList
     internal struct IntList
     {
         List<int> _numList;
+        /// <summary>
+        /// Свойство списка чисел
+        /// </summary>
         public List<int> NumList { get { return _numList; } private set { _numList = value; } }
         /// <summary>
         /// Метод заполнения списка целыми числами в диапазоне min, max

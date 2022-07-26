@@ -12,7 +12,7 @@ namespace Task03_CheckingRepetitions
         /// <summary>
         /// Хэшсэт уникальных значений типа int
         /// </summary>
-        static HashSet<int> _uSet = new HashSet<int> ();
+        static readonly HashSet<int> _uSet = new HashSet<int> ();
         public static HashSet<int> USet { get { return _uSet; }}
         /// <summary>
         /// Метод добавления значений, типа int, в уникальный список

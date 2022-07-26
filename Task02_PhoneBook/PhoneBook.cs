@@ -12,7 +12,8 @@ namespace Task02_PhoneBook
         /// <summary>
         /// Словарь с контактами
         /// </summary>
-        public static Dictionary<string, User> Contacts = new Dictionary<string, User>();
+        static readonly Dictionary<string, User> _contacts = new Dictionary<string, User>();
+        public static Dictionary<string, User> Contacts { get { return _contacts; } }
         /// <summary>
         /// Метод добавления данных в словарь
         /// </summary>
